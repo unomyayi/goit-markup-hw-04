@@ -3,11 +3,11 @@
   --secondari-font: 'Raleway', sans-serif;
   --primari-text-color: #434455;
   --secondari-text-color: #2e2f42;
-  --footer-text-color: #e7e9fc;
-  --withe-text-color: #ffffff;
-  --withe-logo-color: #f4f4fd;
-  --logo-hover-color: #4d5ae5;
-  --hover-btn-color: #404bbf;
+  --accent-color: #e7e9fc;
+  --withe-color: #ffffff;
+  --light-color: #f4f4fd;
+  --Primary-brand: #4d5ae5;
+  --Primary-brand-accent: #404bbf;
   --success-color: #31d0aa;
 }
 
@@ -91,15 +91,13 @@ button {
 }
 .card-content {
   padding: 32px 16px;
-  background-color: var(--withe-text-color);
-  border: 1px solid var(--footer-text-color);
-  border-top: none;
+  background-color: var(--withe-color);
 }
 /*=======================================body=======================================*/
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primari-text-color);
-  background-color: var(--withe-text-color);
+  background-color: var(--withe-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -113,14 +111,14 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
 
-  color: var(--logo-hover-color);
+  color: var(--Primary-brand);
 }
 .logo-dark {
   color: var(--secondari-text-color);
   margin-right: 76px;
 }
 .logo-withe {
-  color: var(--withe-logo-color);
+  color: var(--light-color);
   display: inline-block;
 }
 /*-----------HOVER--------------*/
@@ -130,7 +128,7 @@ body {
 .contact-mail:focus,
 .contact-tel:hover,
 .contact-tel:focus {
-  color: var(--logo-hover-color);
+  color: var(--Primary-brand-accent);
 }
 /*==================================heder====================================*/
 
@@ -183,7 +181,7 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/people-office.jpg');
+    url(../images/people-office.jpg);
   background-color: #2e2f42;
   background-repeat: no-repeat;
   background-position: center;
@@ -195,20 +193,20 @@ body {
   max-width: 494px;
   margin: 0 auto;
   margin-bottom: 48px;
-  color: var(--withe-text-color);
+  color: var(--withe-color);
   text-align: center;
 }
 .modal-btn {
   padding: 16px 32px;
-  color: var(--withe-text-color);
-  background-color: var(--logo-hover-color);
+  color: var(--withe-color);
+  background-color: var(--Primary-brand);
   margin-left: auto;
   margin-right: auto;
   border: none;
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  background: var(--hover-btn-color);
+  background: var(--Primary-brand-accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*===========================activity-company=====================================*/
@@ -229,7 +227,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: var(--withe-logo-color);
+  background: var(--light-color);
   border-radius: 4px;
 }
 .company-icon {
@@ -250,9 +248,8 @@ body {
 }
 
 /*-----------------------------team---------------------------------------------------*/
-
 .team {
-  background-color: var(--withe-logo-color);
+  background-color: var(--light-color);
 }
 .team-list {
   display: flex;
@@ -274,7 +271,6 @@ body {
   text-align: center;
   margin-bottom: 8px;
 }
-
 /*==================================social=====================================*/
 .social-list {
   display: flex;
@@ -292,13 +288,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--logo-hover-color);
+  background-color: var(--Primary-brand);
   border-radius: 50%;
-  fill: var(--withe-logo-color);
+  fill: var(--light-color);
 }
 .social-link:hover,
 .social-link :focus {
-  background-color: var(--hover-btn-color);
+  background-color: var(--Primary-brand-accent);
 }
 .social-icon {
   width: 16px;
@@ -326,7 +322,7 @@ body {
 }
 .customers-link:hover,
 .customers-link:focus {
-  border-color: var(--hover-btn-color);
+  border-color: var(--Primary-brand-accent);
 }
 .customers-icon {
   width: 104px;
@@ -334,7 +330,7 @@ body {
 }
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
-  fill: var(--hover-btn-color);
+  fill: var(--Primary-brand-accent);
 }
 
 /*==================================footer====================================*/
@@ -357,7 +353,7 @@ body {
 
 .footer-text {
   max-width: 264px;
-  color: var(--footer-text-color);
+  color: var(--accent-color);
 }
 /*==============================footer-icon==========================*/
 
@@ -367,7 +363,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  color: var(--withe-text-color);
+  color: var(--withe-color);
   margin-bottom: 16px;
 }
 .footer-list-icon {
@@ -387,7 +383,7 @@ body {
 
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  fill: var(--withe-logo-color);
+  fill: var(--light-color);
 }
 .footer-link-icon:hover,
 .footer-link-icon:focus {
@@ -400,7 +396,7 @@ body {
 
 /*================///////////////////////////////======portfolio=========////////////////=================*/
 .border-header {
-  border-bottom: 1px solid var(--footer-text-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .portfolio-section {
@@ -415,14 +411,14 @@ body {
 }
 .btn-text {
   padding: 12px 24px;
-  border: 1px solid var(--footer-text-color);
-  background: var(--withe-text-color);
-  color: var(--logo-hover-color);
+  border: 1px solid var(--accent-color);
+  background: var(--light-color);
+  color: var(--Primary-brand);
 }
 .btn-text:focus,
 .btn-text:hover {
-  background: var(--hover-btn-color);
-  color: var(--withe-text-color);
+  background: var(--Primary-brand-accent);
+  color: var(--withe-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -435,7 +431,9 @@ body {
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-card-content {
-  border: 1px solid var(--footer-text-color);
+  padding: 32px 16px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border: 1px solid var(--accent-color);
   border-top: none;
 }
 /*======================card-set=====================*/
@@ -451,8 +449,3 @@ body {
 .card-text {
   color: var(--primari-text-color);
 }
-/*
-.project-item * {
-  outline: 1px solid tomato;
-  }
-  */
